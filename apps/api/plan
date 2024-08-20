@@ -1,0 +1,36 @@
+INFOS FOR DIAGNOSIS/                                        1) PS C:\Users\Hp\my-turborepo\packages\db\prisma> npx prisma db push
+>>
+Environment variables loaded from .env
+Prisma schema loaded from schema.prisma
+Datasource "db": MongoDB database "cellcluster" at "cellcluster.5iot12f.mongodb.net"        
+Error: MongoDB error
+Kind: An error occurred during DNS resolution: proto error: io error: A socket operation was attempted to an unreachable network. (os error 10051), labels: {}
+   0: schema_core::commands::schema_push::Calculate `from`
+             at schema-engine\core\src\commands\schema_push.rs:27
+   1: schema_core::state::SchemaPush
+             at schema-engine\core\src\state.rs:461                 2)i have no vpn or third party antivirus software, and after turning off the firewall, i got this PS C:\Users\Hp\my-turborepo\packages\db\prisma> npx prisma db push
+>>
+Environment variables loaded from .env
+Prisma schema loaded from schema.prisma
+Datasource "db": MongoDB database "cellcluster" at "cellcluster.5iot12f.mongodb.net"        
+Error: MongoDB error
+Kind: An error occurred during DNS resolution: proto error: io error: A socket operation was attempted to an unreachable network. (os error 10051), labels: {}
+   0: schema_core::commands::schema_push::Calculate `from`
+             at schema-engine\core\src\commands\schema_push.rs:27
+   1: schema_core::state::SchemaPush
+             at schema-engine\core\src\state.rs:461                  and    PS C:\Users\Hp\my-turborepo\packages\db\prisma> nslookup cellcluster.5iot12f.mongodb.net    
+Server:  UnKnown
+Address:  192.168.0.1
+
+*** No internal type for both IPv4 and IPv6 Addresses (A+AAAA) records available for cellcluster.5iot12f.mongodb.net
+PS C:\Users\Hp\my-turborepo\packages\db\prisma> ping cellcluster.5iot12f.mongodb.net        
+Ping request could not find host cellcluster.5iot12f.mongodb.net. Please check the name and 
+try again.         (keep in mind my firewalls are still down.    3) i got this after npx prisma generate PS C:\Users\Hp\my-turborepo\packages\db\prisma> npx prisma generate
+Environment variables loaded from .env
+Prisma schema loaded from schema.prisma
+
+✔ Generated Prisma Client (v5.18.0) to .\..\..\..\node_modules\@prisma\client in 67ms       
+
+Start by importing your Prisma Client (See: http://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate      4)

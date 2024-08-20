@@ -19,5 +19,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "mongoose": "^8.5.3",
+    "prisma": "^5.18.0"
+  }
 }
